@@ -9,6 +9,7 @@ import { ProfilComponent } from './components/profil/profil.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductsComponent } from './components/products/products.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -19,6 +20,7 @@ import { ProductsComponent } from './components/products/products.component';
     HeaderComponent,
     CartComponent,
     ProductsComponent,
+    FooterComponent,
 
   ],
   imports: [
