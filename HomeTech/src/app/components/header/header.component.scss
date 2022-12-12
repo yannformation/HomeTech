@@ -83,9 +83,10 @@ button{
 }
 
 @media screen and (max-width:425px){
-  .search-icon{
-    top: 200px;
-    right: 41%;
+  .form-control{
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 15px;
   }
 }
 
