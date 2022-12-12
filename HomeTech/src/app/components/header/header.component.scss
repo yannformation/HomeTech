@@ -8,6 +8,7 @@ div {
   );
   align-items: center;
 
+
 }
 
 .form-control {
@@ -37,3 +38,55 @@ button{
  color: white;
  background: red;
 }
+
+@media screen and (max-width:1440px){
+  .search-icon{
+    right: 41%;
+  }
+}
+@media screen and (max-width:1024px){
+  .search-icon{
+    right: 18%;
+  }
+}
+@media screen and (max-width:768px){
+  .form-control{
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .fa-shipping-fast, strong{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-brand{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 60vh;
+  }
+  .byn{
+     position: absolute;
+    top: 90px;
+    right: 10px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .search-icon{
+    top: 112px;
+    right: 25%;
+  }
+}
+
+@media screen and (max-width:425px){
+  .search-icon{
+    top: 200px;
+    right: 41%;
+  }
+}
+
+
