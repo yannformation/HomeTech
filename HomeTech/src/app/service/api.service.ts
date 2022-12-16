@@ -1,17 +1,11 @@
-<<<<<<< HEAD
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
-=======
-import { Injectable } from '@angular/core';
-
->>>>>>> origin/components/profil
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
-<<<<<<< HEAD
   constructor(private http : HttpClient) { }
 
   getProduct(){
@@ -21,7 +15,4 @@ export class ApiService {
       return res;
     }))
   }
-=======
-  constructor() { }
->>>>>>> origin/components/profil
 }

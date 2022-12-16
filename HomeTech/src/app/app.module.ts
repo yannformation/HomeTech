@@ -9,12 +9,12 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { CartComponent } from './components/cart/cart.component';
-import { HomeComponent } from './components/cart/home/home.component';
-import { PaymentComponent } from './components/cart/payment/payment.component';
-import { SuccessComponent } from './components/cart/success/success.component';
+
+
+
 import { HeaderComponent } from './components/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
-import { ProfilComponent } from './components/profil/profil.component';
+
 import { FooterComponent } from './components/footer/footer.component';
 
 
@@ -23,12 +23,12 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent,
     CartComponent,
-    HomeComponent,
-    PaymentComponent,
-    SuccessComponent,
+
+
+
     HeaderComponent,
     ProductsComponent,
-    ProfilComponent,
+
     FooterComponent,
   ],
   imports: [
