@@ -11,9 +11,18 @@ div {
 
 }
 
+#mainNav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+   overflow: hidden;
+}
+
 .form-control {
   border-radius: 5px;
-  width: 600px;
+  width: 37.5rem;
   margin-left: 20px;
 
 
@@ -51,7 +60,7 @@ button{
 }
 @media screen and (max-width:768px){
   .form-control{
-    width: 400px;
+    width: 25rem;
     margin-left: 10px;
     margin-bottom: 15px;
   }
@@ -66,27 +75,48 @@ button{
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    height: 60vh;
+    height: 40vh;
   }
   .byn{
      position: absolute;
-    top: 90px;
-    right: 10px;
-    font-size: 15px;
+     top: 75%;
+     right: 40%;
+     font-size: 15px;
     padding: 10px;
   }
 
   .search-icon{
-    top: 112px;
+    top: 177px;
     right: 25%;
   }
 }
 
 @media screen and (max-width:425px){
   .form-control{
-    width: 300px;
+    width: 18.75rem;
     margin-left: 10px;
     margin-bottom: 15px;
+  }
+  .byn{
+    position: absolute;
+    top: 75%;
+    right: 30%;
+    font-size: 15px;
+   padding: 10px;
+ }
+ .navbar-brand{
+  height: 40vh;
+ }
+ .search-icon{
+  top: 177px;
+  right: 10%;
+}
+}
+
+@media screen and (max-width:375px){
+  .search-icon{
+    top: 176px;
+    right: 15%;
   }
 }
 

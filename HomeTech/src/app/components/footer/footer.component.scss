@@ -1,24 +1,31 @@
+body{
+  display: flex;
+}
+
+
 div
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-     width: 100vw;
+     width: 100%;
 }
 
 
 footer{
+    position: fixed;
+    top: 91vh;
     z-index: 10;
     width: 100vw;
-    position: absolute;
-    bottom: 0;
     overflow: hidden;
     align-content: center;
     line-height: 40px;
     font-size: 40px;
+
 }
 
 .navbar-brand{
+  z-index: 10;
     line-height: 40px;
     align-content: center!important;
 }

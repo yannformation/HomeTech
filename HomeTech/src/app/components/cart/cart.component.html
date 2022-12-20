@@ -1,1 +1,56 @@
-<p>cart works!</p>
+<ng-container *ngIf="true">
+  <div class="container">
+      <div class="card-table">
+          <div class="cart-product">
+              <table class="table table-responsive">
+                  <thead>
+                      <tr>
+                          <th>Sr.No</th>
+                          <th>Nom du produit</th>
+                          <th>Image du produit</th>
+                          <th>Description</th>
+                          <th>Prix</th>
+                          <th>Quantité</th>
+                          <th>Total</th>
+                          <th>Action</th>
+
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Iphone</td>
+                          <td>Some Image</td>
+                          <td>this is branded phone</td>
+                          <td>50</td>
+                          <td>1</td>
+                          <td>50</td>
+                          <td>
+                              <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+  </ng-container>
+
+
+
+
+
+  <ng-container *ngIf="false">
+  <div class="container">
+      <div class="card">
+          <h5 class="card-title">Mon panier</h5>
+      </div>
+      <div class="center">
+          <img src="" alt="">
+          <h4>Votre panier est vide</h4>
+          <h6>Rajouter des articles</h6>
+          <button class="btn btn-primary">Acheter Maintenant</button>
+      </div>
+  </div>
+  </ng-container>
+
