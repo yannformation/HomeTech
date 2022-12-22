@@ -16,7 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
 
 import { FooterComponent } from './components/footer/footer.component';
-
+import { FilterPipe } from './filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -30,13 +31,16 @@ import { FooterComponent } from './components/footer/footer.component';
     ProductsComponent,
 
     FooterComponent,
+      FilterPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
