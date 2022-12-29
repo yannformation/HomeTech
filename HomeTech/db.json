@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "prenom": "Yann",
+      "nom": "Cotard",
+      "email": "yann@gmail.com",
+      "mobile": "07 12 34 56 78",
+      "position": "secrétaire"
+    },
+    {
+      "id": 3,
+      "prenom": "testPrénom",
+      "nom": "testNom",
+      "email": "test@gmail.com",
+      "mobile": "00000000",
+      "position": "test"
+    },
+    {
+      "id": 4,
+      "prenom": "Zied",
+      "nom": "M'Barki",
+      "email": "zied@gmal.com",
+      "mobile": "06 01 02 03 04",
+      "position": "PDG"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

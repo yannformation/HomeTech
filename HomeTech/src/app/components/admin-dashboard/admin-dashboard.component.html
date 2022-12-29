@@ -1,0 +1,82 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h1 style="color:aliceblue">Liste des administrateurs</h1>
+    <div class="d-flex">
+      <button class="btn btn-success" (click)="clickAddAdlin()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter un
+        administrateur</button>
+    </div>
+  </div>
+</nav>
+
+<table class="table mt-3">
+  <thead>
+    <tr>
+      <th scope="col">Admin ID</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Position</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of adminData">
+      <td>{{row.id}}</td>
+      <td>{{row.prenom}}</td>
+      <td>{{row.nom}}</td>
+      <td>{{row.email}}</td>
+      <td>{{row.mobile}}</td>
+      <td>{{row.position}}</td>
+      <td>
+        <button class="btn btn-info" (click)="onEdit(row)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Modifier</button>
+        <button  class="btn btn-danger mx-3" (click)="deleteAdmin(row)">supprimer</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Création d'un Administrateur</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Prénom</label>
+            <input type="text" formControlName="prenom" class="form-control" id="prenom" aria-describedby="emailHelp">
+
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" formControlName="nom" class="form-control" id="nom" aria-describedby="emailHelp">
+
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="mobile" class="form-label">N° Mobile</label>
+            <input type="text" formControlName="mobile" class="form-control" id="mobile">
+          </div>
+          <div class="mb-3">
+            <label for="position" class="form-label">Position</label>
+            <input type="text" formControlName="position" class="form-control" id="position">
+          </div>
+
+          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-info" data-bs-dismiss="modal">Fermer</button>
+        <button type="button" *ngIf="showAdd" (click)=" postAdminDetails()" class="btn btn-success">Enregistrer</button>
+        <button type="button" *ngIf="showUpdate" (click)=" updateAdminDetails()" class="btn btn-success">Modifier</button>
+      </div>
+    </div>
+  </div>
+</div>

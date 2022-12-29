@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "prenom": "Yann",
+      "nom": "Cotard",
+      "email": "yann@gmail.com",
+      "mobile": "0601020304",
+      "position": "PDG"
+    },
+    {
+      "id": 3,
+      "prenom": "",
+      "nom": "",
+      "email": "",
+      "mobile": "",
+      "position": ""
+    },
+    {
+      "id": 4,
+      "prenom": "",
+      "nom": "",
+      "email": "",
+      "mobile": "",
+      "position": ""
+    },
+    {
+      "id": 5,
+      "prenom": "",
+      "nom": "",
+      "email": "",
+      "mobile": "",
+      "position": ""
+    },
+    {
+      "id": 6,
+      "prenom": "",
+      "nom": "",
+      "email": "",
+      "mobile": "",
+      "position": ""
+    },
+    {
+      "id": 7,
+      "prenom": "",
+      "nom": "",
+      "email": "",
+      "mobile": "",
+      "position": ""
+    },
+    {
+      "id": 8,
+      "prenom": "",
+      "nom": "",
+      "email": "",
+      "mobile": "",
+      "position": ""
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
