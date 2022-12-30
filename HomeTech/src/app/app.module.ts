@@ -14,6 +14,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
     ProductsComponent,
     FooterComponent,
     AdminDashboardComponent,
+    LoginComponent,
+    SignupComponent,
 
 
   ],
@@ -37,7 +41,9 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
       {path:"", redirectTo: 'products',pathMatch:'full'},
       {path:'products', component: ProductsComponent},
       {path: 'cart', component:CartComponent},
-      {path: 'admin-dashboard', component: AdminDashboardComponent}
+      {path: 'admin-dashboard', component: AdminDashboardComponent},
+      {path: 'login', component: LoginComponent},
+      {path: 'signup', component: SignupComponent}
     ])
   ],
   providers: [],

@@ -1,0 +1,37 @@
+.container{
+
+  border: 1px solid red;
+}
+.card
+{
+  z-index: 40;
+  border: none;
+  width: 600px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(115, 251, 222);
+  background: linear-gradient(
+    180deg,
+    rgba(115, 251, 222, 1) 0%,
+    rgba(115, 251, 222, 1) 50%,
+    rgba(0, 212, 255, 1) 100%)
+}
+.card label h1, h6{
+  color: #fff;
+}
+
+label{
+  color: #fff;
+}
+.text-center h1{
+  color: #fff;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+}

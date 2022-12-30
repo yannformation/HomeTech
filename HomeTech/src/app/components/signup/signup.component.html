@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="card">
+    <div class="text-center">
+      <h1>Sign Up</h1>
+      <h6>register yourself</h6>
+    </div>
+
+
+    <form class="text-center" [formGroup]="signupForm" (ngSubmit)="signUp()">
+      <div class="d-flex">
+        <div class="mb-3 mx-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input [formControl]="firstName" type="text" class="form-control w-auto" id="firstName">
+          <p *ngIf="
+          firstName?.dirty &&
+          (firstName?.hasError('minlength') || firstName?.hasError('maxlength'))
+        ">
+            Firstname must be between 3 and 20 characters.
+          </p>
+        </div>
+        <div class="mb-3 mx-5">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input [formControl]="lastName" type="text" class="form-control w-auto" id="lastName">
+          <p *ngIf="
+          lastName?.dirty &&
+          (lastName?.hasError('minlength') || lastName?.hasError('maxlength'))
+        ">
+            LastName must be between 3 and 20 characters.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="mb-3 mx-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input [formControl]="email" type="email" class="form-control w-auto" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <p *ngIf="email?.dirty && email?.hasError('required')">
+            Email is required.
+          </p>
+          <p *ngIf="email?.dirty && email?.hasError('email')">
+            The email must be correctly formatted.\n Ex: Jeandu13@live.fr
+          </p>
+        </div>
+        <div class="mb-3 mx-5">
+          <label for="mobile" class="form-label">Mobile Phone</label>
+          <input [formControl]="mobile" type="number" class="form-control w-auto" id="mobile">
+          <p *ngIf="mobile?.dirty && mobile?.hasError('required')">
+            Mobile Phone is required.
+          </p>
+
+          <p *ngIf="mobile?.dirty && (mobile?.hasError('maxlength'))">
+            this is not a French mobile phone
+          </p>
+        </div>
+      </div>
+      <div [formGroup]="passwordForm">
+        <div class="d-flex">
+          <div class="mb-3 mx-3">
+            <label for="mobile" class="form-label">Mot de passe</label>
+            <input type="password" name="passwordCtrl"  class="form-control w-auto" formControlName="passwordCtrl" />
+            <div>Strength: {{ passwordStrength }}</div>
+            <p *ngIf="passwordCtrl?.dirty && passwordCtrl?.hasError('required')">
+              Password is required.
+            </p>
+            <p
+              *ngIf="passwordCtrl?.dirty && (passwordCtrl?.hasError('minlength') || passwordCtrl?.hasError('maxlength'))">
+              Password must be between 8 and 20 characters.
+            </p>
+          </div>
+          <div class="mb-3 mx-5">
+            <label for="mobile" class="form-label">confirmer le mot de passe</label>
+            <input type="password" name="confirmCtrl"  class="form-control w-auto" formControlName="confirmCtrl" />
+            <p *ngIf="confirmCtrl?.dirty && confirmCtrl?.hasError('required')">
+              Confirm your password
+            </p>
+            <p *ngIf="passwordForm.hasError('matchingError')">
+              Your password does not match
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+
+    <a routerLink="/login">Already registered ? Click to login !!</a>
+  </div>
+</div>

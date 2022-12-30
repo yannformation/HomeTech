@@ -6,58 +6,47 @@
       "nom": "Cotard",
       "email": "yann@gmail.com",
       "mobile": "0601020304",
-      "position": "PDG"
+      "position": "Jardinier"
     },
     {
       "id": 3,
-      "prenom": "",
-      "nom": "",
-      "email": "",
-      "mobile": "",
-      "position": ""
+      "prenom": "Zied",
+      "nom": "M'Barki",
+      "email": "zied@mail.com",
+      "mobile": "0102030405",
+      "position": "PDG"
     },
     {
       "id": 4,
-      "prenom": "",
-      "nom": "",
-      "email": "",
-      "mobile": "",
-      "position": ""
-    },
-    {
-      "id": 5,
-      "prenom": "",
-      "nom": "",
-      "email": "",
-      "mobile": "",
-      "position": ""
-    },
-    {
-      "id": 6,
-      "prenom": "",
-      "nom": "",
-      "email": "",
-      "mobile": "",
-      "position": ""
-    },
-    {
-      "id": 7,
-      "prenom": "",
-      "nom": "",
-      "email": "",
-      "mobile": "",
-      "position": ""
-    },
-    {
-      "id": 8,
-      "prenom": "",
-      "nom": "",
-      "email": "",
-      "mobile": "",
-      "position": ""
+      "prenom": "Tintin",
+      "nom": "Milou",
+      "email": "tintin@milou.com",
+      "mobile": "0203010202",
+      "position": "Journaliste"
     }
   ],
-  "comments": [],
+  "signupUsers": [
+    {
+      "firstName": "dsdff",
+      "lastName": "GGfg",
+      "email": "gqgreq@fgqd.df",
+      "passwordForm": {
+        "passwordCtrl": "password",
+        "confirmCtrl": "password"
+      },
+      "id": 1
+    },
+    {
+      "firstName": "essai prenom",
+      "lastName": "essai nom",
+      "email": "essai@mail.fr",
+      "passwordForm": {
+        "passwordCtrl": "azerty123",
+        "confirmCtrl": "azerty123"
+      },
+      "id": 2
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
